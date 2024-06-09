@@ -14,7 +14,12 @@ The images are taken and manually classified by people at thousands of animal sh
 
 
 ## Business Requirements
-* Describe your business requirements
+
+As a Data Analyst from Code Institute Consulting, we are tasked with helping Asirra improve on their HIP software. The current literature suggests that machine classifiers can score above 80% accuracy on this task. Therefore, Asirra is no longer considered safe from attack.
+
+- The client requires us to do a study of their dataset and show them our results.
+- The client wants us to develop a machine learning model that is able to crack the CAPTCHA.
+- The client needs a dashboard where they can test our model with live data.
 
 
 ## Hypothesis and how to validate?
