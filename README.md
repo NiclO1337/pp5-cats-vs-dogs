@@ -7,6 +7,8 @@ Link to live website: [Cats vs Dogs](TODO) <br>(*Hold Ctrl (or Cmd) and click to
 
 
 ## Dataset Content
+
+TODO: remove
 * Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
 
 The dataset contains 12500 pictures of cats and dogs from [Asirra](http://research.microsoft.com/en-us/um/redmond/projects/asirra/) in partnership with [Petfinder.com](http://www.petfinder.com/) <br>
@@ -61,27 +63,29 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
   - We will predict if a given image is of a cat or a dog.
 
 
-
-
-
-
 ## ML Business Case
 * In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
+
+TODO
 
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 
+TODO
 
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
+TODO
+
+
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: TODO
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -94,10 +98,20 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 
 
 ## Main Data Analysis and Machine Learning Libraries
+
+TODO: Remove
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+
+- **Pandas**, 
+- **NumPy**, 
+
+TODO
 
 
 ## Credits 
+
+TODO
+
 
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
