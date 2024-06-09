@@ -38,7 +38,31 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
+
+### **Business Requirement 1**: Data Visualization
+- As a client, we want to be able to access the data analysis and ML tool so that we can learn valuable insights
+  - We will design a dashboard for client using Streamlit.
+
+- As clients, we want to understand how the model interprets the images so that we can identify the distinctive features it recognizes and better select images for our HIP software.
+  - We will display the "mean" and "standard deviation" from the average image study
+
+- As a client, we want to see how the model can differentiate between cat and dogs so that we know how to improve our software in the future
+  - We will show the differences between the average cat and dog images.
+
+- As a client, when looking at the analysis we want to be able to see a examples of images from the dataset so that we are reminded of what the current images looks like.
+  - We will show a montage of images from the dataset of both cats and dogs.
+
+### **Business Requirement 2**: Classification
+
+- As a client, we want to have a ML model so that we can use it to test our HIP software.
+  - We will design a model, test the performance and display the results on the dashboard.
+
+- As a client, I want to be able to upload images to test the model so that we learn which types of images is easy or not to predict on.
+  - We will predict if a given image is of a cat or a dog.
+
+
+
+
 
 
 ## ML Business Case
