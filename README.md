@@ -23,7 +23,18 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
+- Cats are more uniform while dogs come in all shapes and sizes.
+  - We will use an average image study to investigate this.
+
+- A deep learning model with a convolutional neural network (CNN) should be able to accuratly classify the clients images.
+  - We will train a model using CNN and then test the performance.
+
+- Augmenting training set images will greatly improve performance.
+  - Test model without augmented images first and then compare results.
+
+- Fine tuning hyperparameters will significantly improve the models accuracy.
+  - Test the model with base settings and then attempt to increase the score.
 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
