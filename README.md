@@ -99,11 +99,8 @@ TODO
 
 ## Main Data Analysis and Machine Learning Libraries
 
-TODO: Remove
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
-- **Pandas**, 
-- **NumPy**, 
+- **Pandas**, used in the project and provide an example(s) of how you used these libraries.
+- **NumPy**, used in the project and provide an example(s) of how you used these libraries.
 
 TODO
 
