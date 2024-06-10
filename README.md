@@ -199,8 +199,15 @@ TODO
 
 ## Credits 
 
-TODO
 
+
+### Honorable mentions
+
+- To all lovely people in our #community-sweden slack channel: Thank you for endless support and great laughs!
+- Code Institute for providing the premade deployment ready template with a finished README structure to follow.
+
+
+TODO
 
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
@@ -216,8 +223,8 @@ TODO
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
+### Code
 
+- Some of the code from the Code Institutes walkthrough project was used and adapted.
 
-## Acknowledgements (optional)
-* Thank the people that provided support through this project.
 
