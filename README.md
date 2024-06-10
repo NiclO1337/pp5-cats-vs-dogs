@@ -140,18 +140,53 @@ TODO
 
 
 ## Deployment
+
 ### Heroku
 
 * The App live link is: TODO
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
+1. Log in (or sign up) to Heroku. ( https://www.heroku.com/ )
+2. From the dashboard, create a "new app" and follow the instructions.
+3. Go to the deployment tab.
+    - Select GitHub as deployment method.
+    - Connect app to the correct repository.
+4. Select the branch you want to deploy.
+5. Choose to deploy either manully or enable automatic deploys.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+
+
+### Local development
+
+#### Forking the project
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [TODO](TODO).
+<br>(*Hold Ctrl (or Cmd) and click to open in a new window.*)
+
+3. Click the Fork button in the top right corner.
+
+#### Cloning the project
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [TODO](TODO) or your forked copy.
+<br>(*Hold Ctrl (or Cmd) and click to open in a new window.*)
+
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH, or GitHub CLI, and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+Type 'git clone' into the terminal and then paste the link you copied in step 3.
+5. Press enter.
+
+#### Running a development server
+
+1. Create a virtual environment in your workspace.
+2. Install all the required dependencies in your workspace with 'pip install -r requirements.txt' command in the terminal
+3. Run the server with the command 'streamlit run app.py'
+
+#### Changes to the code
+If changes has been made in local development that requires new dependencies, these needs to be added to the requirements.txt file. It is done by entering the following command in the terminal: 'pip3 freeze > requirements.txt'. Updated requirements file must then be added, commited, and pushed to GitHub.
+
 
 
 ## Main Data Analysis and Machine Learning Libraries
