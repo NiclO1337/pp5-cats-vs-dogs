@@ -37,6 +37,9 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 - Fine tuning hyperparameters will significantly improve the models accuracy.
   - Test the model with base settings and then attempt to increase the score.
 
+- Training the model with images that has higher resolution with improve accuracy.
+  - Create datasets with different image quality, then train and test the model with each dataset.
+
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 
