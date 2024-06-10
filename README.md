@@ -8,7 +8,7 @@ Link to live website: [Cats vs Dogs](TODO) <br>(*Hold Ctrl (or Cmd) and click to
 
 ## Dataset Content
 
-TODO: remove
+TODO:Remove
 * Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
 
 The dataset contains 12500 pictures of cats and dogs from [Asirra](http://research.microsoft.com/en-us/um/redmond/projects/asirra/) in partnership with [Petfinder.com](http://www.petfinder.com/) <br>
@@ -133,6 +133,7 @@ Display the performance metrics of the ML model to evaluate its effectiveness.
 
 Business Requirement 2: Assess the success of the model in achieving the desired accuracy and reliability, ensuring it meets the project goals.
 
+
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
@@ -193,33 +194,37 @@ If changes has been made in local development that requires new dependencies, th
 
 - **Pandas**, used in the project and provide an example(s) of how you used these libraries.
 - **NumPy**, used in the project and provide an example(s) of how you used these libraries.
+- **Matplotlib**, used in the project and provide an example(s) of how you used these libraries.
+- **Seaborn**, used in the project and provide an example(s) of how you used these libraries.
+- **Plotly**, used in the project and provide an example(s) of how you used these libraries.
+- **Scikit-learn**, used in the project and provide an example(s) of how you used these libraries.
+- **TensorFlow**, used in the project and provide an example(s) of how you used these libraries.
+- **Keras**, used in the project and provide an example(s) of how you used these libraries.
 
 TODO
 
 
 ## Credits 
 
-
-
 ### Honorable mentions
 
 - To all lovely people in our #community-sweden slack channel: Thank you for endless support and great laughs!
 - Code Institute for providing the premade deployment ready template with a finished README structure to follow.
 
-
-TODO
-
+TODO:Remove
 * In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 * You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
+TODO:Remove
 - The text for the Home page was taken from Wikipedia Article A
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
+TODO:Remove
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
