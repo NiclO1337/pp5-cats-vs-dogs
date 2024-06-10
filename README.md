@@ -81,11 +81,57 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 
-TODO
+### Page 1: Quick Projet Summary
 
+- General information:  An overview of the project, its goals, and its importance.
+- Project Dataset: Detail about the dataset, including its source, size, and the type of data it contains.
+- Link to additional information: Provide links to external resources, documentation, or additional project related information.
+- Business requirements: Clearly state the business requirements that this project aims to address.
+
+
+### Page 2: Image study
+
+This page will provide an analysis of the dataset's images to understand their characteristics.
+
+- Image Shape Analysis: Display the "mean" and "standard deviation" from the average image study.
+- Difference Between Cat and Dog Images: Show the differences between the average cat and dog images.
+- Image Montage: Display a montage of images from the dataset of both cats and dogs to remind users of what the current images look like.
+
+Business requirement 1: Help clients understand how the model interprets images and provide insights into distinctive features.
+
+
+### Page 3: Cats vs Dogs Classifier
+
+Display the results of the classification model.
+
+- Upload Image Widget: Allow users to upload an image for classification.
+- Model Prediction: Display the prediction results, including the predicted class (cat or dog) and the associated probabilities.
+- Model Differentiation: Show how the model can differentiate between cats and dogs, providing insights on the effectiveness of the model.
+
+Business Requirement 2: Demonstrate the model's capability to classify images, enabling clients to test their HIP software.
+
+
+### Page 4: Project Hopothesis and Validation
+
+Show each hypothesis related to the project, describe how they were validated, and the conclusions drawn.
+
+- Hypothesis Statements: Clearly state each hypothesis.
+- Validation Process: Methods and steps taken to validate each hypothesis.
+- Conclusions: Present the outcomes and implications of each hypothesis.
+
+Business Requirement 1 & 2: Provide a scientific basis for the project’s approach and validate the underlying assumptions.
+
+
+### Page 5: ML Performance Metrics
+
+Display the performance metrics of the ML model to evaluate its effectiveness.
+
+- Model History: Learning curves (loss/accuracy) for training and validation sets.
+- Performance Metrics: Include metrics such as accuracy and confusion matrix for both training and test sets.
+- Evaluation Results: Summarize whether the model meets the performance criteria defined in the business case.
+
+Business Requirement 2: Assess the success of the model in achieving the desired accuracy and reliability, ensuring it meets the project goals.
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
