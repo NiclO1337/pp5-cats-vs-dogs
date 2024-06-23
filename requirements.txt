@@ -4,3 +4,5 @@ altair<5
 
 numpy==1.19.2
 joblib
+seaborn==0.11.0
+matplotlib==3.3.1
