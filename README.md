@@ -11,7 +11,7 @@ Link to live website: [Cats vs Dogs](TODO) <br>(*Hold Ctrl (or Cmd) and click to
 TODO:Remove
 * Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
 
-The dataset contains 12500 pictures of cats and dogs from [Asirra](http://research.microsoft.com/en-us/um/redmond/projects/asirra/) in partnership with [Petfinder.com](http://www.petfinder.com/) <br>
+The dataset contains 25000 pictures of cats and dogs from [Asirra](http://research.microsoft.com/en-us/um/redmond/projects/asirra/) in partnership with [Petfinder.com](http://www.petfinder.com/) <br>
 The images are taken and manually classified by people at thousands of animal shelters. They are used by Asirra for HIP (Human Interactive Proof). HIPs are used for many purposes, such as to reduce email and blog spam and prevent brute-force attacks on web site passwords. 
 
 ## Business Requirements
@@ -80,7 +80,7 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 
 - Heuristics: Traditional image recognition tasks for distinguishing between cats and dogs have relied on manual classification, which can be slow and inconsistent. The Asirra dataset, used in CAPTCHAs, is a good example where humans outperform machines. By improving machine accuracy in this task, we aim to enhance automated systems' reliability and potentially mitigate security concerns related to CAPTCHAs.
 
-- The dataset is sourced from [Kaggle](https://www.kaggle.com/competitions/dogs-vs-cats) as part of a public competition. This dataset contains 25,000 images of cats and dogs, out of which only half are labeled and will be used in this project. These 12,500 labeled images will be split into training, validation, and test sets for model development. This split will ensure that the model has a well-rounded understanding during training and can be accurately evaluated on unseen data during validation and testing phases.
+- The dataset is sourced from [Kaggle](https://www.kaggle.com/competitions/dogs-vs-cats) as part of a public competition. This dataset contains 25,000 images of cats and dogs, these labeled images will be split into training, validation, and test sets for model development. This split will ensure that the model has a well-rounded understanding during training and can be accurately evaluated on unseen data during validation and testing phases.
 
 
 ## Dashboard Design
