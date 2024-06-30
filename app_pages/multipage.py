@@ -28,10 +28,10 @@ class MultiPage:
             page_icon = ":cat2:",
         )
 
-        def app_page(self, title, func) -> None:
-            self.pages.append({'title': title, 'function': func})
+    def app_page(self, title, func) -> None:
+        self.pages.append({'title': title, 'function': func})
 
-        def run(self):
-            st.title(self.app_name)
-            page = st.sidebar.radio('Menu', self.pages, format_func=lambda page: page['title'])
-            page['function']()
+    def run(self):
+        st.title(self.app_name)
+        page = st.sidebar.radio('Menu', self.pages, format_func=lambda page: page['title'])
+        page['function']()
