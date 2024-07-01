@@ -43,4 +43,5 @@ we are not able to see any clear differences in this image study.')
     if st.checkbox(
             'Display a montage of images from the \
                 dataset of both cats or dogs'):
-        st.error('Hello')
+        st.error('To see the montage, select label (Cats or Dogs) and click \
+on the "Create Montage" button, then wait for it to load.')
