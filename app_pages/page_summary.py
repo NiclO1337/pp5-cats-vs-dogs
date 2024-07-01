@@ -37,9 +37,17 @@ thousands of animal shelters.
     st.warning('''
 **Additional information**
 
+The projects [**README**](https://github.com/NiclO1337/pp5-cats-vs-dogs) file 
+contains more information.
 ''')
 
     st.error('''
 **Business requirements**
 
+
+1. The client requires us to do a study of their dataset and show them our 
+results.
+
+2. The client wants to have a ML model so that they can use it to test their 
+HIP software.
 ''')
