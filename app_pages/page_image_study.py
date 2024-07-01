@@ -1,4 +1,6 @@
 import streamlit as st
+import matplotlib.pyplot as plt
+from matplotlib.image import imread
 
 
 def page_image_study_body():
@@ -17,9 +19,15 @@ images and provide insights into distinctive features.
     
     if st.checkbox(
         'Display the mean and standard deviation\
-        from the average image study'
-        ):
+        from the average image study'):
+
+        avg_var_cat = plt.imread(f'outputs/{version}/avg_var_cat.png')
+        avg_var_dog = plt.imread(f'outputs/{version}/avg_var_dog.png')
+
         st.success('Hello')
+
+        st.image(avg_var_cat, caption='Cat image - Average and Variablility')
+        st.image(avg_var_dog, caption='Dog image - Average and Variablility')
 
     if st.checkbox(
         'Show the differences between the average cat and dog images.'):
