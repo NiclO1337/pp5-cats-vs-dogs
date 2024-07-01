@@ -8,7 +8,7 @@ def page_image_study_body():
 
     st.header('**Image study**')
 
-    st.error('''
+    st.info('''
 Business requirement 1: Help clients understand how the model interprets 
 images and provide insights into distinctive features.
 ''')
@@ -19,7 +19,7 @@ images and provide insights into distinctive features.
         'Display the mean and standard deviation\
         from the average image study'
         ):
-        st.warning('Hello')
+        st.success('Hello')
 
     if st.checkbox(
         'Show the differences between the average cat and dog images.'):
@@ -27,7 +27,7 @@ images and provide insights into distinctive features.
 
     if st.checkbox(
         'Display a montage of images from the dataset of both cats or dogs'):
-        st.warning('Hello')
+        st.error('Hello')
 
 
     
