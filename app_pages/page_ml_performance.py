@@ -3,6 +3,29 @@ import streamlit as st
 
 def page_ml_performance_body():
 
-    st.write('Hello, world!')
+    st.write('---')
 
-    st.info('ML Performance Metrics')
+    st.header('**ML Performance Metrics**')
+
+    st.info('''
+**General information**
+* information.  
+hello
+
+hello
+''')
+
+    st.success('''
+**Project dataset**
+
+''')
+
+    st.warning('''
+**Additional information**
+
+''')
+
+    st.error('''
+**Business requirements**
+
+''')

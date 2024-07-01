@@ -3,6 +3,30 @@ import streamlit as st
 
 def page_image_study_body():
 
-    st.write('Hello, world!')
+    
+    st.write('---')
 
-    st.info('Image study')
+    st.header('**Image study**')
+
+    st.info('''
+**General information**
+* information.  
+hello
+
+hello
+''')
+
+    st.success('''
+**Project dataset**
+
+''')
+
+    st.warning('''
+**Additional information**
+
+''')
+
+    st.error('''
+**Business requirements**
+
+''')
