@@ -24,7 +24,8 @@ images and provide insights into distinctive features.
         avg_var_cat = plt.imread(f'outputs/{version}/avg_var_cat.png')
         avg_var_dog = plt.imread(f'outputs/{version}/avg_var_dog.png')
 
-        st.success('Hello')
+        st.success('There is too much variation in how images are taken to be \
+able to draw any valid conclusions from this average image study.')
 
         st.image(avg_var_cat, caption='Cat image - Average and Variablility')
         st.image(avg_var_dog, caption='Dog image - Average and Variablility')
