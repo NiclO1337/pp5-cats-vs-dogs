@@ -8,25 +8,24 @@ def page_image_study_body():
 
     st.header('**Image study**')
 
-    st.info('''
-**General information**
-* information.  
-hello
-
-hello
-''')
-
-    st.success('''
-**Project dataset**
-
-''')
-
-    st.warning('''
-**Additional information**
-
-''')
-
     st.error('''
-**Business requirements**
+**Business requirement**
 
+
+The client requires us to do a study of their dataset and show them our 
+results.
 ''')
+
+    version = 'v1'
+    
+    if st.checkbox('Hello'):
+        st.warning('Hello')
+
+    if st.checkbox('Hello'):
+        st.warning('Hello')
+
+    if st.checkbox('Hello'):
+        st.warning('Hello')
+
+
+    
