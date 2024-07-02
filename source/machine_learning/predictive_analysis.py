@@ -5,6 +5,8 @@ import plotly.express as px
 from PIL import Image
 from src.data_management import load_pkl_file
 
+from tensorflow.keras.models import load_model
+
 
 def plot_predictions_and_probabilities(predicted_probability, predicted_class):
     """
@@ -43,3 +45,29 @@ def resize_input_image(img, version):
     resized_image = np.expand_dims(img_resized, axis=0)/255
 
     return resized_image
+
+
+def load_model_and_predict(image, version):
+    """
+    Load model and predict class on live images
+    """
+
+    model = load_model(f'outputs/{version}/cats_vs_dogs_model.h5')
+
+    predicted_probability = model.predict(image)[0, 0]
+
+    # Get the target classes as a tuple stored in target_map (maps targets)
+    target_map = {value: key for key, value in {'Cat': 0, 'Dog': 1,}.items()}
+
+    # Set the class that has higher than 0.5 probability as predicted class
+    predicted_class = target_map[predicted_probability > 0.5]
+
+    if predicted_class == target_map[0]:
+        predicted_probability = 1 - predicted_probability
+        st.success(f'The predictive analysis indicates that the image is\
+                   of a {predicted_class.lower()}.')
+    else:
+        st.error(f'The predictive analysis indicates that the image is\
+                   of a {predicted_class.lower()}.')
+
+    return predicted_probability, predicted_class

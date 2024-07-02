@@ -19,7 +19,7 @@ Business Requirement 2: Demonstrate the model's capability to classify images,
 enabling clients to test their HIP software.
 ''')
 
-    st.success('''
+    st.warning('''
 Click [**here**](link),
 to download a set of cat and dog images for live prediction.''')
 
