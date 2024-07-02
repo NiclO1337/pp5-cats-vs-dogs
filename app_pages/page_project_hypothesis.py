@@ -49,7 +49,7 @@ Augmenting training set images will greatly improve performance.''')
 Test model without augmented images first and then compare results.''')
 
     st.success('''
-**Conclusion:**
+**Conclusion:** Confirmed, augmenting images improved model accuracy by approximately 10%. However it also increased time to train the model by 42%.
 ''')
 
     st.write('---')
@@ -76,8 +76,15 @@ resolution will improve accuracy.''')
 **How to validate:** Create datasets with different image quality,
 then train and test the model with each dataset.''')
 
-    st.success('''
-**Conclusion:**
+    st.error('''
+**Conclusion:** Hypothesis is incorrect. Higher resolution images does
+not always equal better model performance.
+
+Training the model on images 25% of the average size
+resulted in 20% less accuracy but incredibly fast training time.
+Training the model on images 50% of the average size resulted in
+better similar accuracy and 80% faster to train the model.
+This shape will be used going forward.
 ''')
 
     st.write('---')
