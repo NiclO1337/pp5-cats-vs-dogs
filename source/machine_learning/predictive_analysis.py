@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import numpy as np
 
 from PIL import Image
 from source.data_management import load_pkl_file

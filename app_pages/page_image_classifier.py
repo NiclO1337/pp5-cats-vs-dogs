@@ -27,7 +27,8 @@ Click [**here**](link),
 to download a set of cat and dog images for live prediction.''')
 
     images_buffer = st.file_uploader('Upload images of cats or dogs here, \
-you can select more than one at the time.')
+you can select more than one at the time.', type = 'png',
+                                    accept_multiple_files = True)
 
     if images_buffer is not None:
 
@@ -49,8 +50,10 @@ width x {img_array.shape[0]} px height')
 
             plot_predictions_and_probabilities(predict_proba, predict_class)
 
-            df_report = df_report.append({
-                'Name': image.name, 'Result': pred_class}, ignore_index=True)
+            df_report = pd.concat([df_report, pd.DataFrame(
+                {'Name': [image.name], 'Result': [predict_class]}
+                )], ignore_index=True)
+
 
         if not df_report.empty:
             st.warning('Analysis Report')
