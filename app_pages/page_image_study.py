@@ -33,7 +33,7 @@ able to see any distinctive features in this image study.')
         st.image(avg_var_dog, caption='Dog image - Average and Variablility')
 
     if st.checkbox(
-            'Show the differences between the average cat and dog images.'):
+            'Show the differences between the average cat and dog images'):
 
         avg_differences = plt.imread(f'outputs/{version}/avg_diff.png')
 
