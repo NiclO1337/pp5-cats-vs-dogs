@@ -80,5 +80,4 @@ then train and test the model with each dataset.''')
 **Conclusion:**
 ''')
 
-
     st.write('---')
