@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 from PIL import Image
-from src.data_management import load_pkl_file
+from source.data_management import load_pkl_file
 
 from tensorflow.keras.models import load_model
 

@@ -3,9 +3,12 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-
-# Function to create: load_model_and_predict,
-# resize_input_image, plot_predictions_probabilities
+from source.data_management import download_dataframe_as_csv
+from source.machine_learning.predictive_analysis import (
+    resize_input_image,
+    load_model_and_predict,
+    plot_predictions_and_probabilities,
+)
 
 
 def page_image_classifier_body():
