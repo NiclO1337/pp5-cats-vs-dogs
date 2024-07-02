@@ -9,10 +9,10 @@ Link to live website: [Cats vs Dogs](TODO) <br>(*Hold Ctrl (or Cmd) and click to
 ## Dataset Content
 
 TODO:Remove
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
+* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data.
 
 The dataset contains 25000 pictures of cats and dogs from [Asirra](http://research.microsoft.com/en-us/um/redmond/projects/asirra/) in partnership with [Petfinder.com](http://www.petfinder.com/) <br>
-The images are taken and manually classified by people at thousands of animal shelters. They are used by Asirra for HIP (Human Interactive Proof). HIPs are used for many purposes, such as to reduce email and blog spam and prevent brute-force attacks on web site passwords. 
+The images are taken and manually classified by people at thousands of animal shelters. They are used by Asirra for HIP (Human Interactive Proof). HIPs are used for many purposes, such as to reduce email and blog spam and prevent brute-force attacks on web site passwords.
 
 ## Business Requirements
 
@@ -37,7 +37,7 @@ As a Data Analyst from Code Institute Consulting, we are tasked with helping Asi
 - Fine tuning hyperparameters will significantly improve the models accuracy.
   - Test the model with base settings and then attempt to increase the score.
 
-- Training the model with images that has higher resolution with improve accuracy.
+- Training the model with images that has higher resolution will improve accuracy.
   - Create datasets with different image quality, then train and test the model with each dataset.
 
 
@@ -207,7 +207,7 @@ If changes has been made in local development that requires new dependencies, th
 TODO
 
 
-## Credits 
+## Credits
 
 ### Honorable mentions
 
@@ -215,10 +215,10 @@ TODO
 - Code Institute for providing the premade deployment ready template with a finished README structure to follow.
 
 TODO:Remove
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+* You can break the credits section up into Content and Media, depending on what you have included in your project.
 
-### Content 
+### Content
 
 TODO:Remove
 - The text for the Home page was taken from Wikipedia Article A
