@@ -18,6 +18,7 @@ def plot_predictions_and_probabilities(predicted_probability, predicted_class):
         data = [0, 0],
         index = {'Cat': 0, 'Dog': 1}.keys(),
         columns = ['Probability'],
+        dtype=np.float64,
     )
 
     probability_per_class.loc[predicted_class] = predicted_probability
@@ -41,8 +42,12 @@ def resize_input_image(img, version):
     """
     Reshape image to image determined in the data visualization notebook
     """
+    # Convert to RGB before resizing
+    img = img.convert('RGB')
+
     image_shape = load_pkl_file(file_path=f"outputs/{version}/image_shape.pkl")
     img_resized = img.resize((image_shape[1], image_shape[0]), Image.LANCZOS)
+
     resized_image = np.expand_dims(img_resized, axis=0)/255
 
     return resized_image

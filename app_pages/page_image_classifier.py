@@ -37,7 +37,7 @@ you can select more than one at the time.', type = 'png',
         for image in images_buffer:
 
             img_pil = (Image.open(image))
-            st.info(f'Uploaded image name: *{image.name}*')
+            st.info(f'Uploaded image: *{image.name}*')
             img_array = np.array(img_pil)
             st.image(img_pil, caption=f'Image size: {img_array.shape[1]} px \
 width x {img_array.shape[0]} px height')
@@ -45,10 +45,11 @@ width x {img_array.shape[0]} px height')
             version = 'v1'
 
             resized_img = resize_input_image(img=img_pil, version=version)
-            predict_proba, predict_class = load_model_and_predict(
+            predict_probability, predict_class = load_model_and_predict(
                 resized_img, version=version)
 
-            plot_predictions_and_probabilities(predict_proba, predict_class)
+            plot_predictions_and_probabilities(
+                predict_probability, predict_class)
 
             df_report = pd.concat([df_report, pd.DataFrame(
                 {'Name': [image.name], 'Result': [predict_class]}
