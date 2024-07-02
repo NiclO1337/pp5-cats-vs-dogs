@@ -1,6 +1,8 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
+import pandas as pd
+from source.machine_learning.evaluate_clf import load_test_evaluation
 
 
 def page_ml_performance_body():
@@ -29,3 +31,7 @@ def page_ml_performance_body():
         model_loss = plt.imread(f"outputs/{version}/model_training_losses.png")
         st.image(model_loss, caption='Model Training Losses')
     st.write("---")
+
+    st.warning("Generalised performance on the test set")
+    st.dataframe(pd.DataFrame(
+        load_test_evaluation(version), index=['Loss', 'Accuracy']))
