@@ -1,6 +1,9 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
+import os
+import itertools
+import random
 
 
 def page_image_study_body():
@@ -43,5 +46,40 @@ we are not able to see any clear differences in this image study.')
     if st.checkbox(
             'Display a montage of images from the \
                 dataset of both cats or dogs'):
-        st.error('To see the montage, select label (Cats or Dogs) and click \
+        st.error('To see the montage, select label (cat or dog) and click \
 on the "Create Montage" button, then wait for it to load.')
+
+        sample_image_dir = 'outputs/sample_images'
+        labels = os.listdir(sample_image_dir)
+
+        labels_to_display = st.selectbox(label='Select label', options=labels,
+                                         index=0)
+        
+        if st.button('Create Montage'):
+            image_montage(sample_image_dir, labels_to_display,
+                          nrows=2, ncols=3, figsize=(15,10))
+
+
+def image_montage(image_dir, labels, nrows, ncols, figsize):
+    
+    images_list = os.listdir(image_dir + '/' + labels)
+    img_idx = random.sample(images_list, nrows * ncols)
+    
+    # create list of axes indices based on nrows and ncols
+    list_rows= range(0,nrows)
+    list_cols= range(0,ncols)
+    plot_idx = list(itertools.product(list_rows,list_cols))
+
+    # create a Figure and display images
+    fig, axes = plt.subplots(nrows=nrows,ncols=ncols, figsize=figsize)
+    for x in range(0,nrows*ncols):
+        img = imread(image_dir + '/' + labels + '/' + img_idx[x])
+        img_shape = img.shape
+        axes[plot_idx[x][0], plot_idx[x][1]].imshow(img)
+        axes[plot_idx[x][0], plot_idx[x][1]].set_title(
+            f"Width {img_shape[1]}px x Height {img_shape[0]}px")
+        axes[plot_idx[x][0], plot_idx[x][1]].set_xticks([])
+        axes[plot_idx[x][0], plot_idx[x][1]].set_yticks([])
+        plt.tight_layout()
+    
+    st.pyplot(fig=fig)
