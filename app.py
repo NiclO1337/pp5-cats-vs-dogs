@@ -9,10 +9,10 @@ from app_pages.page_ml_performance import page_ml_performance_body
 
 app = MultiPage(app_name='*Purrfect Paws Predictor*')
 
-app.app_page('Project Summary', page_summary_body)
-app.app_page('Image Study', page_image_study_body)
-app.app_page('Cats vs dogs classifier', page_image_classifier_body)
-app.app_page("Project Hypothesis", page_project_hypothesis_body)
-app.app_page("ML Performance Metrics", page_ml_performance_body)
+app.add_page('Project Summary', page_summary_body)
+app.add_page('Image Study', page_image_study_body)
+app.add_page('Cats vs dogs classifier', page_image_classifier_body)
+app.add_page("Project Hypothesis", page_project_hypothesis_body)
+app.add_page("ML Performance Metrics", page_ml_performance_body)
 
 app.run()

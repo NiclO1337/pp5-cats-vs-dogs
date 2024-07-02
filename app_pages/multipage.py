@@ -14,7 +14,7 @@ class MultiPage:
     app_name (str): The name of the app.
 
     Methods:
-    app_page(title, func): Adds a new page to the app.
+    add_page(title, func): Adds a new page to the app.
         title (str): The title of the page.
         func (function): The function to be executed when the page is selected.
     run(): Runs the app.
@@ -28,7 +28,7 @@ class MultiPage:
             page_icon = ":cat2:",
         )
 
-    def app_page(self, title, func) -> None:
+    def add_page(self, title, func) -> None:
         self.pages.append({'title': title, 'function': func})
 
     def run(self):
