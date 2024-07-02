@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+from PIL import Image
+from src.data_management import load_pkl_file
+
 
 def plot_predictions_and_probabilities(predicted_probability, predicted_class):
     """
@@ -29,3 +32,14 @@ def plot_predictions_and_probabilities(predicted_probability, predicted_class):
         width = 600, height = 300, template = 'seaborn',
     )
     st.plotly_chart(fig)
+
+
+def resize_input_image(img, version):
+    """
+    Reshape image to image determined in the data visualization notebook
+    """
+    image_shape = load_pkl_file(file_path=f"outputs/{version}/image_shape.pkl")
+    img_resized = img.resize((image_shape[1], image_shape[0]), Image.LANCZOS)
+    resized_image = np.expand_dims(img_resized, axis=0)/255
+
+    return resized_image
