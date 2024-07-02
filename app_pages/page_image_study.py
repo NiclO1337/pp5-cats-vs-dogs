@@ -27,7 +27,7 @@ images and provide insights into distinctive features.
         avg_var_dog = plt.imread(f'outputs/{version}/avg_var_dog.png')
 
         st.success('There is too much variation in how images are taken to be \
-able to see any distinctive features in this image study.')
+able to see any distinctive features of cats or dogs in this image study.')
 
         st.image(avg_var_cat, caption='Cat image - Average and Variablility')
         st.image(avg_var_dog, caption='Dog image - Average and Variablility')
@@ -38,7 +38,7 @@ able to see any distinctive features in this image study.')
         avg_differences = plt.imread(f'outputs/{version}/avg_diff.png')
 
         st.warning('Images in the dataset are too different from eachother so \
-we are not able to see any clear differences in this image study.')
+we are not able to see any clear average differences in this image study.')
 
         st.image(avg_differences,
                  caption='Average differences between cat and dog images')
@@ -54,17 +54,17 @@ on the "Create Montage" button, then wait for it to load.')
 
         labels_to_display = st.selectbox(label='Select label', options=labels,
                                          index=0)
-        
+
         if st.button('Create Montage'):
             image_montage(sample_image_dir, labels_to_display,
                           nrows=2, ncols=3, figsize=(15,10))
 
 
 def image_montage(image_dir, labels, nrows, ncols, figsize):
-    
+
     images_list = os.listdir(image_dir + '/' + labels)
     img_idx = random.sample(images_list, nrows * ncols)
-    
+
     # create list of axes indices based on nrows and ncols
     list_rows= range(0,nrows)
     list_cols= range(0,ncols)
@@ -81,5 +81,5 @@ def image_montage(image_dir, labels, nrows, ncols, figsize):
         axes[plot_idx[x][0], plot_idx[x][1]].set_xticks([])
         axes[plot_idx[x][0], plot_idx[x][1]].set_yticks([])
         plt.tight_layout()
-    
+
     st.pyplot(fig=fig)
