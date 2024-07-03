@@ -1,6 +1,6 @@
 # Purrfect Paws Predictor
 
-![Amiresponsive image](TODO)
+![Project image](docs/woof_meow.jpg)
 
 ### Cats vs Dogs Classification
 
@@ -195,16 +195,14 @@ If changes has been made in local development that requires new dependencies, th
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- **Pandas**, used in the project and provide an example(s) of how you used these libraries.
-- **NumPy**, used in the project and provide an example(s) of how you used these libraries.
-- **Matplotlib**, used in the project and provide an example(s) of how you used these libraries.
-- **Seaborn**, used in the project and provide an example(s) of how you used these libraries.
-- **Plotly**, used in the project and provide an example(s) of how you used these libraries.
-- **Scikit-learn**, used in the project and provide an example(s) of how you used these libraries.
-- **TensorFlow**, used in the project and provide an example(s) of how you used these libraries.
-- **Keras**, used in the project and provide an example(s) of how you used these libraries.
-
-TODO
+- **Pandas**, used to manage and analyze structured data related to images (e.g., filenames, labels, image dimensions).
+- **NumPy**, essential for numerical operations on image data, especially during preprocessing and model input preparation.
+- **Matplotlib** and **Seaborn**, used to create visualizations that aid in understanding model performance, such as plots of accuracy and loss.
+- **Plotly**, used to create visualizations within the Streamlit app, allowing users to explore the predictions in more detail.
+- **TensorFlow** and **Keras**, the core libraries for defining, training, and evaluating your convolutional neural network (CNN) model.
+- **Joblib**, used for example to save and load trained machine learning model, making it faster to deploy your app without retraining every time.
+- **Kaggle**, source for your initial dataset.
+- **Streamlit**, used to create a dashboard for client.
 
 
 ## Credits
