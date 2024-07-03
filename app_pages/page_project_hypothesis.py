@@ -10,86 +10,82 @@ def page_project_hypothesis_body():
     st.write('---')
 
     st.info('''
-**Hypohesis 1:** Cats are more uniform while dogs come in all shapes and sizes.
+**Hypohesis 1:** Cats are more uniform in appearance, while dogs exhibit
+greater variability in shape and size.
 ''')
 
     st.warning('''
-**How to validate:** We will use an average image study to investigate this.
+**Validation Method:** Average image study.
 ''')
 
     st.error('''
-**Conclusion:** Unable to show any distinct features of cats or dogs due to
-the dataset having too much variability in the images. Further study is needed
-with manually looking over the images in the dataset.
+**Conclusion:** The dataset's high image variability prevented identification
+of distinct cat or dog features. **Further manual review of the dataset is
+recommended.**
 ''')
 
     st.write('---')
 
     st.info('''
 **Hypohesis 2:** A deep learning model with a convolutional neural network
-(CNN) should be able to accuratly classify the clients images.''')
+(CNN) can accurately classify client images.''')
 
     st.warning('''
-**How to validate:**
-We will train a model using CNN and then test the performance.''')
+**Validation Method:** Train and test a CNN model.''')
 
     st.success('''
-**Conclusion:** The CNN did a great job with predicting images even before
-augmenting or fine tuning hyperparameters.
+**Conclusion:** The CNN performed well even without augmentation or
+hyperparameter tuning.
 ''')
 
     st.write('---')
 
     st.info('''
 **Hypohesis 3:**
-Augmenting training set images will greatly improve performance.''')
+Augmenting the training set will substantially improve model performance.''')
 
     st.warning('''
-**How to validate:**
-Test model without augmented images first and then compare results.''')
+**Validation Method:**
+Compare model performance with and without augmented images.''')
 
     st.success('''
-**Conclusion:** Confirmed, augmenting images improved model accuracy by approximately 10%. However it also increased time to train the model by 42%.
+**Conclusion:** Augmentation increased accuracy by approximately 10% but
+extended training time by 42%. **Hypothesis confirmed**.
 ''')
 
     st.write('---')
 
     st.info('''
 **Hypohesis 4:**
-Fine tuning hyperparameters will significantly improve the models accuracy.''')
+Fine-tuning hyperparameters will significantly enhance model accuracy.''')
 
     st.warning('''
-**How to validate:**
-Test the model with base settings and then attempt to increase the score.''')
+**Validation Method:**
+Compare model performance with default and tuned hyperparameters.''')
 
     st.success('''
-**Conclusion:** Confirmed, hyperparameters play a huge role in model performance. Testing different values had a big effect on prediction accuracy.
-''')
+**Conclusion:** Hyperparameter tuning significantly impacts model performance.
+**Hypothesis confirmed**.''')
 
     st.write('---')
 
     st.info('''
-**Hypohesis 5:** Training the model with images that has higher
-resolution will improve accuracy.''')
+**Hypohesis 5:**
+Training on higher-resolution images will improve accuracy.''')
 
     st.warning('''
-**How to validate:** Create datasets with different image quality,
-then train and test the model with each dataset.''')
+**Validation Method:**
+Train and test the model on datasets with varying image resolutions.''')
 
     st.error('''
-**Conclusion:** Hypothesis is incorrect. Higher resolution images does
-not always equal better model performance.
-
-Training the model on images 25% of the average size
-resulted in 20% less accuracy but incredibly fast training time.
-Training the model on images 50% of the average size resulted in
-better similar accuracy and 80% faster to train the model.
-This shape will be used going forward.''')
+**Conclusion:** Initially incorrect, but more nuanced.''')
 
     st.success('''
-Hypothesis could be correct. After more testing, this appears to be more
-complicated than previously throught. Due to the variability and complexity
-of the images in the dataset, larger image shape seems to be more critical
-to model performance than previous testing showed.''')
+**Explanation**: Higher resolution doesn't always equate to better performance.
+25% of average size resolution images resulted in lower accuracy but much
+faster training. 50% of average size resolution images yielded similar
+accuracy with significantly reduced training time. Further testing revealed
+that due to dataset complexity, larger image size might be more crucial than
+initially thought.''')
 
     st.write('---')
