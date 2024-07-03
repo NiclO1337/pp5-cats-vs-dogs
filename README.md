@@ -1,4 +1,5 @@
-# Cats vs Dogs
+# Purrfect Paws Predictor
+- Cats vs Dogs Classification
 
 ![Amiresponsive image](TODO)
 
@@ -140,7 +141,7 @@ Business Requirement 2: Assess the success of the model in achieving the desired
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
-TODO
+On deployed version, the V8 model, which performs much better when tested. Can not accuratly predict on live images at all, much worse than the previously deployed V1 model. Further investigation is needed.
 
 
 ## Deployment
