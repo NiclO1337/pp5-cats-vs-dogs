@@ -138,9 +138,8 @@ Business Requirement 2: Assess the success of the model in achieving the desired
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
-On deployed version, the V8 model, which performs much better when tested. Can not accuratly predict on live images at all, much worse than the previously deployed V1 model. Further investigation is needed.
+On deployed version, the V8 model, which performs much better when tested. Can not accuratly predict on live images at all, much worse than the previously deployed V1 model. Further investigation is needed, have prepared for V9 model training. To be continued.
 
 
 ## Deployment
@@ -166,7 +165,7 @@ On deployed version, the V8 model, which performs much better when tested. Can n
 #### Forking the project
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [TODO](TODO).
+2. Go to the repository for this project, [link](https://github.com/NiclO1337/pp5-cats-vs-dogs).
 <br>(*Hold Ctrl (or Cmd) and click to open in a new window.*)
 
 3. Click the Fork button in the top right corner.
@@ -174,7 +173,7 @@ On deployed version, the V8 model, which performs much better when tested. Can n
 #### Cloning the project
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [TODO](TODO) or your forked copy.
+2. Go to the repository for this project, [link](https://github.com/NiclO1337/pp5-cats-vs-dogs) or your forked copy.
 <br>(*Hold Ctrl (or Cmd) and click to open in a new window.*)
 
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH, or GitHub CLI, and copy the link shown.
