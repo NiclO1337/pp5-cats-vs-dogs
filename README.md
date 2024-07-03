@@ -1,16 +1,15 @@
 # Purrfect Paws Predictor
-- Cats vs Dogs Classification
 
 ![Amiresponsive image](TODO)
 
-Link to live website: [Cats vs Dogs](TODO) <br>(*Hold Ctrl (or Cmd) and click to open in a new window.*)
+### Cats vs Dogs Classification
+
+Link to live website: [Purrfect Paws Predictor](https://purrfect-paws-predictor-ab2bd8b45a44.herokuapp.com/)
+<br>(*Hold Ctrl (or Cmd) and click to open in a new window.*)
 
 
 
 ## Dataset Content
-
-TODO:Remove
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data.
 
 The dataset contains 25000 pictures of cats and dogs from [Asirra](http://research.microsoft.com/en-us/um/redmond/projects/asirra/) in partnership with [Petfinder.com](http://www.petfinder.com/) <br>
 The images are taken and manually classified by people at thousands of animal shelters. They are used by Asirra for HIP (Human Interactive Proof). HIPs are used for many purposes, such as to reduce email and blog spam and prevent brute-force attacks on web site passwords.
@@ -148,7 +147,7 @@ On deployed version, the V8 model, which performs much better when tested. Can n
 
 ### Heroku
 
-* The App live link is: TODO
+* The App live link is: [Purrfect Paws Predictor](https://purrfect-paws-predictor-ab2bd8b45a44.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
