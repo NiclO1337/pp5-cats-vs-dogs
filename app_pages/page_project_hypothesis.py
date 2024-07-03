@@ -84,7 +84,12 @@ Training the model on images 25% of the average size
 resulted in 20% less accuracy but incredibly fast training time.
 Training the model on images 50% of the average size resulted in
 better similar accuracy and 80% faster to train the model.
-This shape will be used going forward.
-''')
+This shape will be used going forward.''')
+
+    st.success('''
+Hypothesis could be correct. After more testing, this appears to be more
+complicated than previously throught. Due to the variability and complexity
+of the images in the dataset, larger image shape seems to be more critical
+to model performance than previous testing showed.''')
 
     st.write('---')

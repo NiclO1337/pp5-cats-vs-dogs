@@ -23,12 +23,12 @@ enabling clients to test their HIP software.
 ''')
 
     st.warning('''
-Click [**here**](https://github.com/NiclO1337/pp5-cats-vs-dogs/tree/\
-384dbd8385aa5271160c397f9865e7d188dfc462/outputs/sample_images.zip),
+Click [**here**](https://github.com/NiclO1337/pp5-cats-vs-dogs/blob/\
+0c5a6c863a2c858c08f073f2818d99fe061a312a/outputs/sample_images.zip),
 to download a set of cat and dog images for live prediction.''')
 
     images_buffer = st.file_uploader('Upload images of cats or dogs here, \
-you can select more than one at the time.', type = 'png',
+you can select more than one at the time.', type = ['png', 'jpg',],
                                     accept_multiple_files = True)
 
     if images_buffer is not None:
