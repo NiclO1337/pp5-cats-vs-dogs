@@ -63,7 +63,7 @@ Fine tuning hyperparameters will significantly improve the models accuracy.''')
 Test the model with base settings and then attempt to increase the score.''')
 
     st.success('''
-**Conclusion:**
+**Conclusion:** Confirmed, hyperparameters play a huge role in model performance. Testing different values had a big effect on prediction accuracy.
 ''')
 
     st.write('---')
